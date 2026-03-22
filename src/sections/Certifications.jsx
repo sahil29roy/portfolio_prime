@@ -2,9 +2,9 @@ import React, { useState, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { Award, ExternalLink, ShieldCheck, X, Eye, Sparkles } from 'lucide-react';
-
-
-
+import cppImg from '../assets/cert/cpp_neocolab.jpeg';
+import dsaImg from '../assets/cert/dsa_neocolab.jpeg';
+import javaImg from '../assets/cert/java_master_course.jpeg';
 const certifications = [
     {
         title: 'Data Structures & Algorithms',
@@ -13,7 +13,7 @@ const certifications = [
         color: '#38bdf8',
         accent: '#0ea5e9',
         gradient: 'from-sky-500/20 to-cyan-500/20',
-        image: 'https://drive.google.com/uc?export=view&id=1s0WpbLOeBT6KG0xajlEuXYgTUKizyQXJ',
+        image: dsaImg,
         link: 'https://drive.google.com/file/d/1s0WpbLOeBT6KG0xajlEuXYgTUKizyQXJ/view',
         num: '01',
     },
@@ -24,7 +24,7 @@ const certifications = [
         color: '#f97316',
         accent: '#ea580c',
         gradient: 'from-orange-500/20 to-amber-500/20',
-        image: 'https://drive.google.com/uc?export=view&id=1LG2YN9qRhNCXxBxw0hTeCUoO6tfJHj_F',
+        image: cppImg,
         link: 'https://drive.google.com/file/d/1LG2YN9qRhNCXxBxw0hTeCUoO6tfJHj_F/view',
         num: '02',
     },
@@ -35,7 +35,7 @@ const certifications = [
         color: '#14b8a6',
         accent: '#0d9488',
         gradient: 'from-teal-500/20 to-emerald-500/20',
-        image: 'https://drive.google.com/uc?export=view&id=1oJxkEzOGszWW3eLVxv9BDSiPvkZu_fDh',
+        image: javaImg,
         link: 'https://drive.google.com/file/d/1oJxkEzOGszWW3eLVxv9BDSiPvkZu_fDh/view',
         num: '03',
     },
