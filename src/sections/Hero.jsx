@@ -115,7 +115,7 @@ const Hero = () => {
                             transition={{ delay: 0.4 }}
                             className="flex justify-center lg:justify-start gap-6 mb-8"
                         >
-                            {[{ value: '1+', label: 'Years Exp.' }, { value: '2+', label: 'Projects' }, { value: '10+', label: 'Technologies' }].map((s, i) => (
+                            {[{ value: '3+', label: 'Months Exp.' }, { value: '2+', label: 'Projects' }, { value: '10+', label: 'Technologies' }].map((s, i) => (
                                 <div key={i} className="text-center">
                                     <div className="text-2xl font-black" style={{ color: '#2dd4bf' }}>{s.value}</div>
                                     <div className="text-xs text-slate-500 font-medium tracking-wide">{s.label}</div>

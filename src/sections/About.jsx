@@ -233,7 +233,7 @@ const About = () => {
                                 {[
                                     { value: '5+', label: 'Projects Completed', color: '#14b8a6', glow: 'rgba(20,184,166,0.2)' },
                                     { value: '15+', label: 'Tech Stack', color: '#8b5cf6', glow: 'rgba(139,92,246,0.2)' },
-                                    { value: '1+', label: 'Years Coding', color: '#34d399', glow: 'rgba(52,211,153,0.2)' },
+                                    { value: '3+', label: 'Months Exp.', color: '#34d399', glow: 'rgba(52,211,153,0.2)' },
                                     { value: '∞', label: 'Curiosity', color: '#f59e0b', glow: 'rgba(245,158,11,0.2)' },
                                 ].map((stat, i) => (
                                     <motion.div
