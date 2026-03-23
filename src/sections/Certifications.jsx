@@ -2,31 +2,19 @@ import React, { useState, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { Award, ExternalLink, ShieldCheck, X, Eye, Sparkles } from 'lucide-react';
-import cppImg from '../assets/cert/cpp_neocolab.jpeg';
-import dsaImg from '../assets/cert/dsa_neocolab.jpeg';
+import cloudImg from '../assets/cert/cloud computing.png';
 import javaImg from '../assets/cert/java_master_course.jpeg';
 const certifications = [
     {
-        title: 'Data Structures & Algorithms',
-        issuer: 'NeoCollab',
-        icon: '🌳',
+        title: 'Cloud Computing',
+        issuer: 'NPTEL',
+        icon: '☁️',
         color: '#38bdf8',
         accent: '#0ea5e9',
         gradient: 'from-sky-500/20 to-cyan-500/20',
-        image: dsaImg,
-        link: 'https://drive.google.com/file/d/1s0WpbLOeBT6KG0xajlEuXYgTUKizyQXJ/view',
+        image: cloudImg,
+        link: 'https://drive.google.com/file/d/1C0aINcQThY9LZPpO1N4u9omJGfEbFAx4/view?usp=drive_link',
         num: '01',
-    },
-    {
-        title: 'Object-Oriented Programming',
-        issuer: 'NeoCollab',
-        icon: '📦',
-        color: '#f97316',
-        accent: '#ea580c',
-        gradient: 'from-orange-500/20 to-amber-500/20',
-        image: cppImg,
-        link: 'https://drive.google.com/file/d/1LG2YN9qRhNCXxBxw0hTeCUoO6tfJHj_F/view',
-        num: '02',
     },
     {
         title: 'Java Master Course',
@@ -37,7 +25,7 @@ const certifications = [
         gradient: 'from-teal-500/20 to-emerald-500/20',
         image: javaImg,
         link: 'https://drive.google.com/file/d/1oJxkEzOGszWW3eLVxv9BDSiPvkZu_fDh/view',
-        num: '03',
+        num: '02',
     },
 ];
 
@@ -543,8 +531,8 @@ const Certifications = () => (
                 transition={{ delay: 0.6 }}
             >
                 {[
-                    { label: 'Certifications', value: '3', color: '#c084fc' },
-                    { label: 'Platforms', value: '3', color: '#14b8a6' },
+                    { label: 'Certifications', value: '2', color: '#c084fc' },
+                    { label: 'Platforms', value: '2', color: '#14b8a6' },
                     { label: 'Verified', value: '100%', color: '#34d399' },
                 ].map((stat, i) => (
                     <div key={i} className="flex flex-col items-center gap-1">
