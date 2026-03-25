@@ -10,6 +10,11 @@ const stats = [
     { value: '8+', label: 'Technologies' },
 ];
 
+const softSkills = [
+    { label: 'Time Management', color: '#fca5a5' },
+    { label: 'Leadership Skills', color: '#fdba74' },
+];
+
 const techPills = [
     { label: 'Next.js', color: '#14b8a6' },
     { label: 'React', color: '#38bdf8' },
@@ -184,6 +189,26 @@ const Hero = () => {
                                 ))}
                             </div>
 
+                            {/* Soft skills */}
+                            <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                                {softSkills.map((pill, i) => (
+                                    <motion.span
+                                        key={pill.label}
+                                        initial={{ opacity: 0, y: 8 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.6 + i * 0.05 }}
+                                        className="text-[11px] font-mono px-2.5 py-1 rounded-full"
+                                        style={{
+                                            background: `${pill.color}12`,
+                                            border: `1px solid ${pill.color}30`,
+                                            color: pill.color,
+                                        }}
+                                    >
+                                        {pill.label}
+                                    </motion.span>
+                                ))}
+                            </div>
+
                             {/* Floating tech pills */}
                             <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                                 {techPills.map((pill, i) => (
@@ -191,7 +216,7 @@ const Hero = () => {
                                         key={pill.label}
                                         initial={{ opacity: 0, y: 8 }}
                                         animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.6 + i * 0.05 }}
+                                        transition={{ delay: 0.7 + i * 0.05 }}
                                         className="text-[11px] font-mono px-2.5 py-1 rounded-full"
                                         style={{
                                             background: `${pill.color}12`,

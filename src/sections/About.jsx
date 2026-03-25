@@ -131,8 +131,8 @@ const About = () => {
 
                                     {/* Morphing blob */}
                                     <div className="absolute inset-4 flex items-center justify-center">
-                                        <div className="blob-shape w-48 h-48 bg-gradient-to-br from-cyan-400/20 to-orange-400/20 border border-cyan-400/30 flex items-center justify-center">
-                                            <span className="text-6xl select-none">👨‍💻</span>
+                                        <div className="blob-shape w-48 h-48 bg-gradient-to-br from-cyan-400/20 to-orange-400/20 border border-cyan-400/30 flex items-center justify-center overflow-hidden">
+                                            <img src="/image.png" alt="Profile" className="w-full h-full object-cover" />
                                         </div>
                                     </div>
 
