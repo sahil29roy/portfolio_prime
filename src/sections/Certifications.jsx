@@ -32,7 +32,7 @@ const certifications = [
     },
     {
         title: 'Conflict Management',
-        issuer: 'NPTEL',
+        issuer: 'Coursera',
         icon: '🤝',
         color: '#f59e0b',
         accent: '#d97706',
